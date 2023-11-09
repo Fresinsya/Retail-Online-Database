@@ -19,13 +19,14 @@ create Table Kategori (
     namaKategori varchar(255) not null
 );
 
+drop TABLE Produk;
 create table Produk (
     id int not null primary key auto_increment,
     namaBarang varchar(255) not null,
     harga int not null,
     stok int not null,
     id_kategori int not null,
-    foreign key (id_kategori) references Kategori(id)
+    -- foreign key (id_kategori) references Kategori(id)
 );
 
 create Table Transaksi (

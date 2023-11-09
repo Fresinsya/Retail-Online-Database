@@ -1,0 +1,1 @@
+DELETE from `kategori` WHERE id = 3;
