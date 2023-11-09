@@ -1,0 +1,1 @@
+DELETE from `detailtransaksi` WHERE id = 22;

@@ -45,7 +45,8 @@ create TABLE DetailTransaksi (
     quantity int not null,
     foreign key (id_transaksi) references Transaksi(id),
     foreign key (id_produk) references Produk(id)
-)
+);
+ALTER Table detailtransaksi ADD subtotal int not null;
 
 
 show tables;
