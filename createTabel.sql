@@ -36,6 +36,8 @@ create Table Transaksi (
     foreign key (id_user) references User(id)
 );
 
+alter Table transaksi add dateTransaksi DATETIME not null;
+
 create TABLE DetailTransaksi (
     id int not null primary key auto_increment,
     id_transaksi int not null,
