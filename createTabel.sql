@@ -26,7 +26,7 @@ create table Produk (
     harga int not null,
     stok int not null,
     id_kategori int not null,
-    -- foreign key (id_kategori) references Kategori(id)
+    foreign key (id_kategori) references Kategori(id)
 );
 
 create Table Transaksi (
